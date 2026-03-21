@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Coin Flip</title>
+  </head>
+  <body>
+    <h1 class="headingTxt">Coin Flip</h1>
+    <div class="card">
+      <div class="coinCount">
+        <h2>Heads : <span id="headcount"> 0 </span></h2>
+        <h2>Tails : <span id="tailcount"> 0 </span></h2>
+      </div>
+      <div class="roundCoin" id="roundCoin">
+        <div class="coinFace heads">
+            <h1> Heads </h1>
+        </div>
+        <div class="coinFace tails">
+            <h1> Tails </h1>
+        </div>
+      </div>
+      <audio src="./coin_flip.mp3" id="flipSound"> </audio>
+      <button onclick="flipCoin()"> Flip Coin </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
